@@ -1,0 +1,12 @@
+PODS:
+  - Fragaria (1.0.1):
+    - Fragaria/unicode
+  - Fragaria/unicode (1.0.1)
+
+DEPENDENCIES:
+  - Fragaria
+
+SPEC CHECKSUMS:
+  Fragaria: ae1ecfc6ee4f1d81a823169826ed4aac728ba27c
+
+COCOAPODS: 0.29.0
