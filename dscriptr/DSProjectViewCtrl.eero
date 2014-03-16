@@ -1,0 +1,18 @@
+//
+//  DSProjectViewCtrl.eero
+//  dscriptr
+//
+//  Created by Max Desyatov on 3/16/14.
+//  Copyright (c) 2014 Max Desyatov. All rights reserved.
+//
+ 
+#import 'DSProjectViewCtrl.eeh'
+ 
+implementation DSProjectViewCtrl
+
+outlineView: OutlineView, viewForTableColumn: TableColumn, item: (id) item, return id
+  TableCellView result = view.makeViewWithIdentifier:'DataCell', owner:self
+
+  return result
+
+end

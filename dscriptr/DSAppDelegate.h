@@ -11,5 +11,6 @@
 @interface DSAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSView *editView;
+@property (assign) IBOutlet NSTreeController *tree;
 
 @end

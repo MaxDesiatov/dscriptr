@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		16940670880A4D00965555C1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC52CB9E77E44F29B2091562 /* libPods.a */; };
 		E2030D1518D5DE0400767BAF /* DSAppDelegate.eero in Sources */ = {isa = PBXBuildFile; fileRef = E2030D1318D5DE0400767BAF /* DSAppDelegate.eero */; };
+		E2030D1918D5E22400767BAF /* DSProjectViewCtrl.eeh in Resources */ = {isa = PBXBuildFile; fileRef = E2030D1718D5E22400767BAF /* DSProjectViewCtrl.eeh */; };
+		E2030D1A18D5E22400767BAF /* DSProjectViewCtrl.eero in Sources */ = {isa = PBXBuildFile; fileRef = E2030D1818D5E22400767BAF /* DSProjectViewCtrl.eero */; };
 		E232E41318D4E2A600FE4734 /* SyntaxDefinitions.plist in Resources */ = {isa = PBXBuildFile; fileRef = E232E3BD18D4E2A600FE4734 /* SyntaxDefinitions.plist */; };
 		E232E41518D4E34500FE4734 /* Syntax Definitions in Resources */ = {isa = PBXBuildFile; fileRef = E232E41418D4E34500FE4734 /* Syntax Definitions */; };
 		E24236B618D4C08900C8B951 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E24236B518D4C08900C8B951 /* Podfile */; };
@@ -39,6 +41,8 @@
 		BC52CB9E77E44F29B2091562 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2030D1318D5DE0400767BAF /* DSAppDelegate.eero */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.eero; path = DSAppDelegate.eero; sourceTree = "<group>"; };
 		E2030D1618D5DF1D00767BAF /* DSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSAppDelegate.h; sourceTree = "<group>"; };
+		E2030D1718D5E22400767BAF /* DSProjectViewCtrl.eeh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DSProjectViewCtrl.eeh; sourceTree = "<group>"; };
+		E2030D1818D5E22400767BAF /* DSProjectViewCtrl.eero */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.eero; path = DSProjectViewCtrl.eero; sourceTree = "<group>"; };
 		E232E3BD18D4E2A600FE4734 /* SyntaxDefinitions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = SyntaxDefinitions.plist; path = Pods/Fragaria/SyntaxDefinitions.plist; sourceTree = SOURCE_ROOT; };
 		E232E41418D4E34500FE4734 /* Syntax Definitions */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Syntax Definitions"; path = "Pods/Fragaria/Syntax Definitions"; sourceTree = SOURCE_ROOT; };
 		E24236B518D4C08900C8B951 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -131,6 +135,8 @@
 				E2030D1618D5DF1D00767BAF /* DSAppDelegate.h */,
 				E2030D1318D5DE0400767BAF /* DSAppDelegate.eero */,
 				E26330B518D45E5F00C0CBE2 /* MainMenu.xib */,
+				E2030D1718D5E22400767BAF /* DSProjectViewCtrl.eeh */,
+				E2030D1818D5E22400767BAF /* DSProjectViewCtrl.eero */,
 				E26330B818D45E5F00C0CBE2 /* Images.xcassets */,
 				E26330A718D45E5F00C0CBE2 /* Supporting Files */,
 			);
@@ -251,6 +257,7 @@
 				E232E41318D4E2A600FE4734 /* SyntaxDefinitions.plist in Resources */,
 				E24236B618D4C08900C8B951 /* Podfile in Resources */,
 				E26330AB18D45E5F00C0CBE2 /* InfoPlist.strings in Resources */,
+				E2030D1918D5E22400767BAF /* DSProjectViewCtrl.eeh in Resources */,
 				E26330B918D45E5F00C0CBE2 /* Images.xcassets in Resources */,
 				E26330B118D45E5F00C0CBE2 /* Credits.rtf in Resources */,
 				E232E41518D4E34500FE4734 /* Syntax Definitions in Resources */,
@@ -308,6 +315,7 @@
 			files = (
 				E2030D1518D5DE0400767BAF /* DSAppDelegate.eero in Sources */,
 				E26330AD18D45E5F00C0CBE2 /* main.m in Sources */,
+				E2030D1A18D5E22400767BAF /* DSProjectViewCtrl.eero in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -31,4 +31,13 @@ applicationDidFinishLaunching: Notification
   // set initial text
   fragaria.setString:'// We don\'t need the future.'
 
+  self.tree.addObject:{@"title": @"BOOKS",
+  @"isLeaf": @(NO),
+  @"children":@[
+                @{@"title":@"To Kill a Mockingbird", @"author":@"Harper Lee", @"isLeaf": @(YES)},
+                @{@"title":@"Pride and Prejudice", @"author":@"Jane Austen", @"isLeaf": @(YES)}
+                ].mutableCopy }.mutableCopy
+
+  Log('')
+
 end
