@@ -7,6 +7,7 @@
 //
  
 #import "DSAppDelegate.h"
+#import 'DSProjectViewCtrl.eeh'
 #import <Fragaria/MGSFragaria.h>
 
 implementation DSAppDelegate
@@ -22,7 +23,6 @@ applicationDidFinishLaunching: Notification
   fragaria.setObject:self, forKey:MGSFODelegate
   
   // Objective-C is the place to be
-    
   fragaria.setObject: 'JavaScript', forKey:MGSFOSyntaxDefinitionName
   
   // embed in our container - exception thrown if containerView is nil
@@ -30,14 +30,9 @@ applicationDidFinishLaunching: Notification
   
   // set initial text
   fragaria.setString:'// We don\'t need the future.'
+  
+  self.projectViewCtrl.populateTree: self.tree
 
-  self.tree.addObject:{@"title": @"BOOKS",
-  @"isLeaf": @(NO),
-  @"children":@[
-                @{@"title":@"To Kill a Mockingbird", @"author":@"Harper Lee", @"isLeaf": @(YES)},
-                @{@"title":@"Pride and Prejudice", @"author":@"Jane Austen", @"isLeaf": @(YES)}
-                ].mutableCopy }.mutableCopy
 
-  Log('')
 
 end

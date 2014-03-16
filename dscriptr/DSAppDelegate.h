@@ -8,9 +8,12 @@
 
 @import Cocoa;
 
+@class DSProjectViewCtrl;
+
 @interface DSAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSView *editView;
 @property (assign) IBOutlet NSTreeController *tree;
+@property (assign) IBOutlet DSProjectViewCtrl *projectViewCtrl;
 
 @end

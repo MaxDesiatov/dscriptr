@@ -14,6 +14,7 @@
         <customObject id="Voe-Tx-rLC" customClass="DSAppDelegate">
             <connections>
                 <outlet property="editView" destination="mPA-96-aGW" id="RnL-iK-XeA"/>
+                <outlet property="projectViewCtrl" destination="T80-bY-j32" id="RkQ-Tq-XMI"/>
                 <outlet property="rootView" destination="EiT-Mj-1SZ" id="jM7-Ci-Gmj"/>
                 <outlet property="tree" destination="Jil-DN-rky" id="qE9-lh-NIH"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
