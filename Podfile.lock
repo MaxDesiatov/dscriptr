@@ -7,6 +7,6 @@ DEPENDENCIES:
   - Fragaria
 
 SPEC CHECKSUMS:
-  Fragaria: ae1ecfc6ee4f1d81a823169826ed4aac728ba27c
+  Fragaria: 29b7b94c81971ea18613d0198861245e09c5db71
 
 COCOAPODS: 0.29.0
