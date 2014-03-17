@@ -2,11 +2,14 @@ PODS:
   - Fragaria (1.0.1):
     - Fragaria/unicode
   - Fragaria/unicode (1.0.1)
+  - Functional.m (1.0.0)
 
 DEPENDENCIES:
   - Fragaria
+  - Functional.m
 
 SPEC CHECKSUMS:
   Fragaria: 29b7b94c81971ea18613d0198861245e09c5db71
+  Functional.m: 820f79334a3fb2a1974181a0191745599f4362d7
 
 COCOAPODS: 0.29.0

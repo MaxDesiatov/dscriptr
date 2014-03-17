@@ -1,0 +1,34 @@
+//
+//  DSProjectViewNode.eero
+//  dscriptr
+//
+//  Created by Max Desyatov on 3/17/14.
+//  Copyright (c) 2014 Max Desyatov. All rights reserved.
+//
+ 
+#import 'DSProjectViewNode.eeh'
+#import <Functional.m/NSArray+F.h>
+ 
+implementation DSProjectViewNode
+
+initWithPath: String, return instancetype
+  self = super.init
+  if self
+    self.path = path
+    self.title = (URL.URLWithString: path).lastPathComponent
+    
+    BOOL isDir
+    fm := FileManager.defaultManager
+    fm.fileExistsAtPath: path, isDirectory: &isDir
+    self.isLeaf = !isDir
+  return self
+
+children, return Array
+  fm := FileManager.defaultManager
+  contents := fm.contentsOfDirectoryAtPath: self.path, error: nil
+  return contents.map: (String item)
+    fullPath := self.path.stringByAppendingPathComponent: item
+    return DSProjectViewNode.alloc.initWithPath: fullPath
+
+end
+

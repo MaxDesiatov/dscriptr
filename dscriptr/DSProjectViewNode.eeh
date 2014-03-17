@@ -1,0 +1,18 @@
+//
+//  DSProjectViewNode.eeh
+//  dscriptr
+//
+//  Created by Max Desyatov on 3/17/14.
+//  Copyright (c) 2014 Max Desyatov. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+ 
+interface DSProjectViewNode
+  String path
+  String title
+  BOOL isLeaf
+
+initWithPath: String, return instancetype
+
+end

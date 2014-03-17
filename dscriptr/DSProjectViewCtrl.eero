@@ -10,26 +10,10 @@
  
 implementation DSProjectViewCtrl
 
-outlineView: OutlineView, viewForTableColumn: TableColumn, item: (id) item, return id
-  TableCellView result = view.makeViewWithIdentifier:'DataCell', owner:self
+outlineView: OutlineView, viewForTableColumn: TableColumn, item: (id) item,
+  return id
+  
+  return view.makeViewWithIdentifier:'DataCell', owner:self
 
-  return result
-
-populateTree: TreeController
-  root := '/'
-  fm := FileManager.defaultManager
-  contents := fm.contentsOfDirectoryAtPath: root, error: nil
-
-  for String item in contents
-    BOOL isDir
-    fullPath := root.stringByAppendingPathComponent: item
-    fm.fileExistsAtPath: fullPath, isDirectory: &isDir
-    
-    tree.addObject:{@"title": item,
-      @"isLeaf": @(!isDir),
-      @"children":@[].mutableCopy }.mutableCopy
-
-outlineViewItemWillExpand: Notification
-  Log('')
 
 end

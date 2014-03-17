@@ -7,7 +7,7 @@
 //
  
 #import "DSAppDelegate.h"
-#import 'DSProjectViewCtrl.eeh'
+#import 'DSProjectViewNode.eeh'
 #import <Fragaria/MGSFragaria.h>
 
 implementation DSAppDelegate
@@ -31,7 +31,7 @@ applicationDidFinishLaunching: Notification
   // set initial text
   fragaria.setString:'// We don\'t need the future.'
   
-  self.projectViewCtrl.populateTree: self.tree
+  self.tree.addObject: DSProjectViewNode.alloc.initWithPath: '/'
 
 
 

@@ -9,6 +9,7 @@
 import Cocoa
  
 interface DSProjectViewCtrl <OutlineViewDataSource, OutlineViewDelegate>
+  TreeController tree {assign}
 
 populateTree: TreeController
 
